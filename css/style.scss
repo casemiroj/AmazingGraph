@@ -7,6 +7,7 @@
 
 body {
     background-color: #fff;
+    height: 100vh;
 }
 
 .navbar {
@@ -14,28 +15,87 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 38px;
+    padding: 3vh 68px 17vh;
+    
+    .logo-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #D2872C
+    }
+    
+    .navbar-list {
+        display: flex;
+        list-style: none;
+        
+        .navbar-list-link {
+            text-decoration: none;
+            color: #766F68;
+            margin-left: 16px;
+            font-size: 1.2rem;
+        
+            &:hover {
+                color: #94918e;
+            }
+        }
+    }   
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #D2872C
-}
-
-.navbar-list {
+.container {
+    width: 100%;
+    height: 65vh;
     display: flex;
-    list-style: none;
-}
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 
-.navbar-list-link {
-    text-decoration: none;
-    color: #766F68;
-    margin-left: 16px;
-    font-weight: bold;
-    font-size: 1.2rem;
+    .container-item-1 {
+        padding-left: 130px;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
-    &:hover {
-        color: #94918e;
+        .titulo {
+            width: 125%;
+            font-size: 4.7rem;
+            color: #766F68;
+            transform: translate3d(0, -60px, 0);
+        }
+
+        .subtitulo {
+            font-size: 2.5rem;
+            color: #766F68;
+        }
+
+        .btn {
+            background-color: #D2872C;
+            width: 50%;
+            height: 50px;
+            margin-top: 50px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: .7s ease;
+
+            &:hover {
+                background-color: #946022;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1.2rem
+            }
+        }
+    }
+
+    .container-item-2 {
+        width: 60%;
+        height: 110%;
+        background-image: url('../assets/team.jpg');
+        background-size: cover;
+        transform: translate3d(0, -10px, 0);
+        z-index: -1;
     }
 }

@@ -8,6 +8,7 @@
 
 body {
   background-color: #fff;
+  height: 100vh;
 }
 
 .navbar {
@@ -21,31 +22,110 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 38px;
+  padding: 3vh 68px 17vh;
 }
 
-.logo-text {
+.navbar .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
   color: #D2872C;
 }
 
-.navbar-list {
+.navbar .navbar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.navbar-list-link {
+.navbar .navbar-list .navbar-list-link {
   text-decoration: none;
   color: #766F68;
   margin-left: 16px;
-  font-weight: bold;
   font-size: 1.2rem;
 }
 
-.navbar-list-link:hover {
+.navbar .navbar-list .navbar-list-link:hover {
   color: #94918e;
+}
+
+.container {
+  width: 100%;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .container-item-1 {
+  padding-left: 130px;
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-item-1 .titulo {
+  width: 125%;
+  font-size: 4.7rem;
+  color: #766F68;
+  -webkit-transform: translate3d(0, -60px, 0);
+          transform: translate3d(0, -60px, 0);
+}
+
+.container .container-item-1 .subtitulo {
+  font-size: 2.5rem;
+  color: #766F68;
+}
+
+.container .container-item-1 .btn {
+  background-color: #D2872C;
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.container .container-item-1 .btn:hover {
+  background-color: #946022;
+}
+
+.container .container-item-1 .btn p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.container .container-item-2 {
+  width: 60%;
+  height: 110%;
+  background-image: url("../assets/team.jpg");
+  background-size: cover;
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
