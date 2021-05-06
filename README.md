@@ -1,4 +1,4 @@
-# 404 Challenge
+# Amazing Graph
 Este projeto consiste em um desafio do <a href="https://devchallenge.com.br/">DevChallenge</a>.
 
 Podendo ser encontrado em: https://devchallenge.com.br/challenges/5ec9a7fc10e94a38493d3910/details.
